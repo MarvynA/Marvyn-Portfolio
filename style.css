@@ -1,14 +1,16 @@
 body {
 margin: 0px;
+height: 100%;
 }
 
 #contentlayout {
 display: flex;
-justify-content: center;
+justify-content: center; 
 }
 
 #NameSection {background-color:#f5f5f5;
-width: 40%;}
+width: 40%;
+}
 
 header {
 display:flex;
@@ -39,21 +41,25 @@ margin-left: 37px;
 margin-right: 37px;
 }
 
-h1 {font-family: 'Bebas Neue';
+h1 {
+font-family: 'Bebas Neue';
 font-size: 60pt;
 font-weight: 100pt;
 letter-spacing: 30%;
 text-align: center;
 height: 30px;
-padding-bottom: 5px;}
+padding-bottom: 5px;
+}
 
-h2 {font-family: 'Bebas Neue';
+h2 {
+font-family: 'Bebas Neue';
 font-size: 35pt;
 font-weight: 100;
 text-align: center;
 padding-bottom:65px;}
 
-p {font-family: 'Merriweather';
+p {
+font-family: 'Merriweather';
 font-size: 15pt;
 font-weight: 300;
 text-align: center;
@@ -76,10 +82,69 @@ border-radius: 10px;
 }
 
 #CaseStudies {
-background-image: linear-gradient(to right, #f5f5f5 , #FFDB00);
+width: 60%;
+background-image: url(images/Doodles.png), linear-gradient(to right, #f5f5f5 , #FFDB00);
+background-repeat: no-repeat;
+background-position: right center;
 }
 
-#doodles {
-object-fit: fill;
+#CaseStudies p{
+font-family: 'Merriweather';
+font-style: italic;
+align-items: center;
+font-size: 15pt;
 }
 
+#mockups-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+row-gap: 6%;
+margin-top: 8%;
+margin-left: 7%;
+align-items: top;
+justify-content: top;
+}
+
+#PawMatch {
+margin-left: 20%;
+margin-top: -1%;
+}
+
+    
+h3 {
+font-family: 'Bebas Neue';
+font-size: 25pt;
+font-weight: 100;
+text-align: center ; 
+}
+
+#mockups-action {
+display: flex;
+align-items: baseline;
+}
+
+#arrow{
+margin-left: 5%;
+}
+
+#DOE-action {
+display: flex;
+align-items: baseline;
+margin-left: 67%;
+margin-top: -66%;
+}
+
+#PawMatch-action {
+display: flex;
+align-items: baseline;
+margin-left: 67%;
+margin-top:  4%;
+}
+
+#SavetheChildren-action{
+    display: flex;
+    align-items: baseline;
+    margin-left: 67%;
+    margin-top: 4%;
+}
