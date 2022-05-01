@@ -1,17 +1,9 @@
 body {
 margin: 0px;
-height: 100%;
 }
 
-#contentlayout {
-display: flex;
-justify-content: center; 
-}
 
-#NameSection {background-color:#f5f5f5;
-width: 40%;
-}
-
+/* Nav Bar Start*/
 header {
 display:flex;
 justify-content: space-between;
@@ -39,16 +31,50 @@ font-family: 'Merriweather';
 font-weight:300;
 margin-left: 37px;
 margin-right: 37px;
+text-decoration: none;
+color: #202020;
 }
+
+a:hover {
+font-style: italic;
+}
+
+/* Nav Bar End */
+
+
+.pagelayout {
+display: flex;
+justify-content: center; 
+height:115vh;
+}
+
+
+/* Left Side Layout Start*/
+#NameSection {
+background-color:#f5f5f5;
+width: 40%;
+}
+    
+#NameSection div {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: fixed;
+margin-left: 3%;
+margin-top: 3%;
+}
+    
 
 h1 {
 font-family: 'Bebas Neue';
 font-size: 60pt;
 font-weight: 100pt;
-letter-spacing: 30%;
+letter-spacing:4px;
 text-align: center;
 height: 30px;
-padding-bottom: 5px;
+color: #202020;
+margin-bottom: 4%;
 }
 
 h2 {
@@ -56,15 +82,16 @@ font-family: 'Bebas Neue';
 font-size: 35pt;
 font-weight: 100;
 text-align: center;
-padding-bottom:65px;}
+letter-spacing: 2px;
+color:#202020;
+}
 
 p {
 font-family: 'Merriweather';
 font-size: 15pt;
 font-weight: 300;
 text-align: center;
-line-height: 30px;
-padding-bottom: 125px;
+color: #202020;
 }
 
 button {
@@ -74,41 +101,42 @@ font-family: 'Bebas Neue';
 font-weight: 400;
 font-size: 20px;
 text-align: center;
-margin-left: 200px;
 background-color: #202020;
 border-width: 0px;
 color: #f5f5f5;
 border-radius: 10px;
+margin-top: 20%;
 }
 
+button:hover {
+transform: scale(1.1)
+}
+
+#NameSection a {
+margin-top: 20%;
+}
+/* Left Side Layout End */
+
+
+/* Right Side Layout Starts */
 #CaseStudies {
 width: 60%;
 background-image: url(images/Doodles.png), linear-gradient(to right, #f5f5f5 , #FFDB00);
-background-repeat: no-repeat;
-background-position: right center;
-}
-
-#CaseStudies p{
-font-family: 'Merriweather';
-font-style: italic;
-align-items: center;
-font-size: 15pt;
 }
 
 #mockups-grid {
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
-row-gap: 6%;
+column-width: 1000px;
+row-gap: 8%;
 margin-top: 8%;
-margin-left: 7%;
-align-items: top;
-justify-content: top;
+align-items: center;
 }
 
 #PawMatch {
 margin-left: 20%;
-margin-top: -1%;
+margin-top: -1;
 }
 
     
@@ -119,32 +147,7 @@ font-weight: 100;
 text-align: center ; 
 }
 
-#mockups-action {
-display: flex;
-align-items: baseline;
-}
 
-#arrow{
-margin-left: 5%;
-}
 
-#DOE-action {
-display: flex;
-align-items: baseline;
-margin-left: 67%;
-margin-top: -66%;
-}
 
-#PawMatch-action {
-display: flex;
-align-items: baseline;
-margin-left: 67%;
-margin-top:  4%;
-}
 
-#SavetheChildren-action{
-    display: flex;
-    align-items: baseline;
-    margin-left: 67%;
-    margin-top: 4%;
-}
