@@ -32,7 +32,7 @@
   <ul id="nav-bar">
      <li> <a>Portfolio</a> </li>
      <li class="divider">|</li>
-     <li> <a href="about.html">About Me</a> </li>
+     <li> <a class="active" href="about.html">About Me</a> </li>
      <li class="divider">|</li>
      <li> <a>Resume</a> </li>
      <li class="divider">|</li> 
@@ -46,17 +46,41 @@
 
 <section id="pagelayout">
 
-    <div id="PictureSection">
+   <div id="PictureSection">
+      
+    <ul id="breadcrumb"> 
+      <li> <a href="index.html">Home</a> </li>
+      <li> >> </li>
+      <li>About Me</li>
+    </ul>
    
-    </div>
+    <img id="profilepic" src="images/picture.png">
+  
+   </div>
      
     
-    <div id="AboutMeSection">
+   <div id="AboutMeSection">
     
+    <div>
+    <p>Hello, I’m Marvyn Alvardo!</p>
+    <p>I’m a certified UX/UI designer, from Colombia Engineering & UC <br> Berkeley Universities, focusing on user centric design experiences. </p>
+    <p>I strive to solve complex problems that improve the lives of everyday <br> people, while constantly absorbing and adapting to my environment.</p>
+    <p id="callout">My empathy focused approach ensures I bridge the gap between my clients, developers and users.</p>
+    <p>I draw on my past experiences as a professional pastry chef to create designs that are elegant yet functional, perform well under pressure, meet tight deadlines and manage teammates; while never forgetting about the customer's point of view. </p>
     </div>
+    
+  
+   </div>
     
 </section>
 
-    
+<!-- /* JQuery */ -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"> </script>
+<script src="script.js"></script>
+
 </body>
+
+
 </html>
