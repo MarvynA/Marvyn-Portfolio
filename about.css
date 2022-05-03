@@ -1,18 +1,9 @@
 body {
 margin: 0px;
-height: 100%;
-}
-
-#contentlayout {
-display: flex;
-justify-content: center; 
-}
+    }
     
-#NameSection {background-color:#f5f5f5;
-width: 40%;
-height: 100vh;
-}
     
+/* Nav Bar Start*/
 header {
 display:flex;
 justify-content: space-between;
@@ -40,12 +31,30 @@ font-family: 'Merriweather';
 font-weight:300;
 margin-left: 37px;
 margin-right: 37px;
+text-decoration: none;
+color: #202020;
 }
+    
+a:hover {
+font-style: italic;
+}
+    
+/* Nav Bar End */
 
-#CaseStudies {
-width: 60%;
-height: 100vh;
-background-image: url(images/Doodles.png), linear-gradient(to right, #f5f5f5 , #FFDB00);
-background-repeat: no-repeat;
-background-position: right center;
-}
+.pagelayout {
+    display: flex;
+    justify-content: center; 
+    height:115vh;
+    }
+    
+    
+    /* Left Side Layout Start*/
+    #PictureSection {
+    background-color:#f5f5f5;
+    width: 40%;
+    }
+
+    #AboutMeSection {
+        width: 60%;
+    background-image: url(images/Doodles.png), linear-gradient(to right, #f5f5f5 , #FFDB00);
+        }

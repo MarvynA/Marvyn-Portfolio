@@ -21,8 +21,8 @@ justify-content: flex-end;
 
 #social-media {  
 height: 30px;
-margin-top: 5px;
-margin-left: 25px;
+margin-top: 8px;
+margin-left: 30px;
 justify-content: center;
 }
 
@@ -45,7 +45,7 @@ font-style: italic;
 .pagelayout {
 display: flex;
 justify-content: center; 
-height:115vh;
+height:120vh;
 }
 
 
@@ -109,7 +109,7 @@ margin-top: 20%;
 }
 
 button:hover {
-transform: scale(1.1)
+transform: scale(1.2)
 }
 
 #NameSection a {
@@ -126,20 +126,15 @@ background-image: url(images/Doodles.png), linear-gradient(to right, #f5f5f5 , #
 
 #mockups-grid {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
-column-width: 1000px;
+column-width: 50px;
+margin-left: 10%;
 row-gap: 8%;
 margin-top: 8%;
 align-items: center;
 }
 
-#PawMatch {
-margin-left: 20%;
-margin-top: -1;
-}
-
-    
 h3 {
 font-family: 'Bebas Neue';
 font-size: 25pt;
@@ -147,6 +142,27 @@ font-weight: 100;
 text-align: center ; 
 }
 
+#mockups-grid p {
+font-family: 'Merriweather';
+font-size: 15pt;
+font-weight: 300;
+font-style: italic;
+}
+
+.arrow {
+margin-left: 25px;
+}
+
+#PawMatch {
+margin-left: 20%;
+margin-top: -1;
+}
+
+#mockups-grid p:hover {
+transform: scale(1.1)
+}
+/* Right Side Layout Ends */
+    
 
 
 
