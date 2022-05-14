@@ -163,7 +163,15 @@ transform: scale(1.1)
 }
 /* Right Side Layout Ends */
     
-
+@media only screen
+and (min-width:320px)
+and (max-width:1200px)
+{
+header {
+    flex-direction: column;
+    height: 100%;
+}
+}
 
 
 
