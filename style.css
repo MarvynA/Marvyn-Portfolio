@@ -173,5 +173,244 @@ header {
 }
 }
 
+/*do not show hamburger menu on desktop */
 
+.fa-bars {
+    display:none;
+}
+
+#nav-bar {
+display: flex;
+flex-direction: row;
+list-style-type: none;
+justify-content: flex-end;
+}
+
+#social-media {  
+
+justify-content: center;
+font-size: 25px;
+    padding: 20px;
+}
+
+header a {
+font-family: 'Merriweather';
+font-weight:300;
+margin-left: 37px;
+margin-right: 37px;
+text-decoration: none;
+color: #202020;
+}
+
+a:hover {
+font-style: italic;
+}
+
+/* Nav Bar End */
+
+
+.pagelayout {
+display: flex;
+justify-content: center; 
+height:115vh;
+}
+
+
+/* Left Side Layout Start*/
+#NameSection {
+background-color:#f5f5f5;
+width: 40%;
+}
+    
+#NameSection div {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: fixed;
+margin-left: 3%;
+margin-top: 3%;
+}
+    
+
+h1 {
+font-family: 'Bebas Neue';
+font-size: 60pt;
+font-weight: 100pt;
+letter-spacing:4px;
+text-align: center;
+height: 30px;
+color: #202020;
+margin-bottom: 4%;
+}
+
+h2 {
+font-family: 'Bebas Neue';
+font-size: 35pt;
+font-weight: 100;
+text-align: center;
+letter-spacing: 2px;
+color:#202020;
+}
+
+p {
+font-family: 'Merriweather';
+font-size: 15pt;
+font-weight: 300;
+text-align: center;
+color: #202020;
+}
+
+button {
+height: 50px;
+width: 150px;
+font-family: 'Bebas Neue';
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+background-color: #202020;
+border-width: 0px;
+color: #f5f5f5;
+border-radius: 10px;
+margin-top: 20%;
+}
+
+button:hover {
+transform: scale(1.1)
+}
+
+#NameSection a {
+margin-top: 20%;
+}
+/* Left Side Layout End */
+
+
+/* Right Side Layout Starts */
+#CaseStudies {
+width: 60%;
+background-image: url(images/Doodles.png), linear-gradient(to right, #f5f5f5 , #FFDB00);
+}
+
+#mockups-grid {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+column-width: 1000px;
+row-gap: 8%;
+margin-top: 8%;
+align-items: center;
+}
+
+#PawMatch {
+margin-left: 20%;
+margin-top: -1;
+}
+
+    
+h3 {
+font-family: 'Bebas Neue';
+font-size: 25pt;
+font-weight: 100;
+text-align: center ; 
+}
+
+
+/*media queries */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 1200px)
+   {
+
+  header {
+        display: flex;
+        justify-content: space-between;
+          height: 100%;
+          flex-direction: column;
+        background-color: #f5f5f5;
+        padding:0px;
+        align-items: center;
+    }
+
+    .fa-bars {
+        display:inline-block;
+    }
+
+    #NameSection a {
+        margin-top: 0px;
+        padding:20px;
+    }            
+    header i {
+        display:inline-block;
+        padding:20px;
+        
+    }
+
+    h1 {
+        letter-spacing: normal;
+    }
+
+    #NameSection {
+        width:100%;
+    }
+
+    #NameSection div {
+        position:relative;
+    }
+   
+    .pagelayout {
+        height: 100%;
+    flex-direction: column;
+    }
+    #social-media {
+        margin:20px;
+    }
+
+    #nav-bar {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        /*flex direction, set to column*/
+        flex-direction: column;
+        display: none;
+        transition: display 5s linear;
+    }
+
+    .divider {
+        display:none;
+    }
+
+    #social_media {
+        padding:20px;
+    }
+
+    #CaseStudies {
+        width: 100%;
+        display: flex;
+    justify-content: center;
+    background-size: cover;
+
+    }
+
+    #mockups-grid img {
+        margin: auto;
+    }
+
+    #mockups-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 0px;
+    row-gap: inherit;
+    }
+
+    h3 {
+        margin: 0px;
+    }
+
+    #arrow {
+        padding:20px;
+    }
+}
 
